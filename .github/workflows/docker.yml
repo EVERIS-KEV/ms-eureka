@@ -30,7 +30,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: everiskev000/service-eureka-server:v1
+          tags: everiskev000/service-eureka-server
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
