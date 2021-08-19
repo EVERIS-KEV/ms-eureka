@@ -41,7 +41,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.USERNAME }}/service-eureka-server:v1  
+          tags: ${{ secrets.USERNAME }}/service-eureka-server  
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
