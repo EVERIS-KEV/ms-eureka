@@ -41,7 +41,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.USERNAME }}/simplewhale:latest
+          tags: ${{ secrets.USERNAME }}/ms-eureka:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
