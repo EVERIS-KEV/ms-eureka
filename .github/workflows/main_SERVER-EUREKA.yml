@@ -18,8 +18,8 @@ jobs:
           uses: azure/docker-login@v1
           with:
             login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-            username: ${{ secrets.REGISTRY_USERNAME }}
-            password: ${{ secrets.REGISTRY_PASSWORD }}
+            username: palmachristopher7@hotmail.com
+            password: 8-aJGm=zg2arPyU
         - run: |
             docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/service-eureka-server:${{ github.sha }}
             docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/service-eureka-server:${{ github.sha }}
